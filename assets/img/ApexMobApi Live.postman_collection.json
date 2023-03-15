@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "01f1f3ac-18c1-4a0f-970b-039f34bb40a0",
+		"name": "ApexMobApi Live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Live Get Member Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"UserName\":\"125\",\r\n    \"Password\":\"125\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Member/GetMemberDetails",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Member",
+						"GetMemberDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Society DB Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocCd\" : \"2230119\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Society/LoginSocCd",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Society",
+						"LoginSocCd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Mobile Menu Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocCd\" : \"2230119\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/MobileMenu/MobileMenu",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"MobileMenu",
+						"MobileMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Member Scheme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"MemberId\":\"142\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Scheme/GetMemberScheme",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Scheme",
+						"GetMemberScheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Member Sub Scheme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"MemberId\":\"142\",\r\n    \"SchemeId\":\"1\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Scheme/GetMemberSubScheme",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Scheme",
+						"GetMemberSubScheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Member Sub Scheme Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"MemberId\":\"142\",\r\n    \"SchemeId\":\"2\",\r\n    \"SubSchemeId\":\"3\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Scheme/GetMemberSubSchemeBalance",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Scheme",
+						"GetMemberSubSchemeBalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Member Scheme Account Balance Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"MemberId\":\"142\",\r\n    \"SchemeId\":\"2\",\r\n    \"SubSchemeId\":\"3\",\r\n    \"SchemeAccountId\":\"3536\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Scheme/GetMemberSubSchemeAccountBalanceDetails",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Scheme",
+						"GetMemberSubSchemeAccountBalanceDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Live Get Scheme Account Surity Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SocietyCode\" : \"2230119\",\r\n    \"SocietyYear\" :\"2022-2023\",\r\n    \"MemberId\":\"142\",\r\n    \"SchemeId\":\"2\",\r\n    \"SubSchemeId\":\"3\",\r\n    \"SchemeAccountId\":\"3536\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mobileapp.parjinindiainfotech.in/api/Scheme/GetSchemeAccountSurityDetails",
+					"protocol": "http",
+					"host": [
+						"mobileapp",
+						"parjinindiainfotech",
+						"in"
+					],
+					"path": [
+						"api",
+						"Scheme",
+						"GetSchemeAccountSurityDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
